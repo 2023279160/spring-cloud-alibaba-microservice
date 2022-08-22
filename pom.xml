@@ -12,6 +12,8 @@
         <module>service-consumer</module>
         <module>service-provider-nacos</module>
         <module>service-consumer-nacos</module>
+        <module>service-consumer-nacos-feign</module>
+        <module>gateway</module>
     </modules>
     <packaging>pom</packaging>
 

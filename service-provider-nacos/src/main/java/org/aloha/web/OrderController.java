@@ -1,5 +1,6 @@
 package org.aloha.web;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,8 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class OrderController {
+
+    @Value("${server.port}")
+    private String port;
+
     @GetMapping("/order/{id}")
     public String order(@PathVariable String id) {
-        return "this is nacos order :" + id;
+        return "this is nacos order "+port+" :" + id;
     }
 }
