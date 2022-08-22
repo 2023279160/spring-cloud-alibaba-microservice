@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: consumer-order
-server:
-  port: 10021

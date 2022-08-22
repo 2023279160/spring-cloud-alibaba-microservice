@@ -1,1 +1,11 @@
 /.idea/
+/service-consumer-nacos-feign/target/
+/gateway/target/
+/service-consumer/target/
+/service-consumer-nacos/
+/service-provider/target/
+/service-provider-nacos/target/
+.gitignore
+*.iml
+**/src/test/**
+**/*.iml
